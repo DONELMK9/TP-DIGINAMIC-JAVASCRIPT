@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Addition</title>
+</head>
+<body>
+
+    <h1>Calculatrice - Addition</h1>
+
+    <label for="nombre1">Premier nombre :</label>
+    <input type="number" id="nombre1">
+
+    <br><br>
+
+    <label for="nombre2">Deuxième nombre :</label>
+    <input type="number" id="nombre2">
+
+    <br><br>
+
+    <button id="calculer">Calculer</button>
+
+    <p>
+        <span id="resultat"></span>
+    </p>
+
+    <script>
+        
+        let nombre1 = document.querySelector("#nombre1");
+        let nombre2 = document.querySelector("#nombre2");
+        let bouton = document.querySelector("#calculer");
+        let resultat = document.querySelector("#resultat");
+
+        
+        bouton.addEventListener("click", function() {
+
+            let a = nombre1.valueAsNumber;
+            let b = nombre2.valueAsNumber;
+
+            
+            if (nombre1.value === "" || nombre2.value === "" ||
+                Number.isNaN(a) || Number.isNaN(b)) {
+
+                resultat.textContent = "Vous devez saisir un nombre";
+                resultat.style.color = "red";
+
+            } else {
+
+                let somme = a + b;
+
+                resultat.textContent = "Le résultat de l'addition est : " + somme;
+                resultat.style.color = "black";
+            }
+        });
+    </script>
+
+</body>
+</html>

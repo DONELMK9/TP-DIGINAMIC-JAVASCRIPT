@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gestion des utilisateurs</title>
+
+    <script src="tp-10-formulaire.js" defer></script>
+</head>
+
+<body>
+
+    <h1>Gestion des utilisateurs</h1>
+
+    <button id="ajouter">+ Ajouter</button>
+
+    <h2>Liste des utilisateurs</h2>
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Identifiant</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Date de naissance</th>
+                <th>Lieu de naissance</th>
+                <th>Adresse</th>
+                <th>Supprimer</th>
+            </tr>
+        </thead>
+
+        <tbody id="listeUtilisateurs">
+        </tbody>
+
+    </table>
+
+    <p id="message"></p>
+    
+<hr>
+
+<h2>Ajouter un utilisateur</h2>
+
+<form id="formulaireUtilisateur">
+
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" required>
+    <br><br>
+
+    <label for="prenom">Prénom :</label>
+    <input type="text" id="prenom" required>
+    <br><br>
+
+    <label for="genre">Genre :</label>
+    <select id="genre" required>
+        <option value="">Choisir</option>
+        <option value="Homme">Homme</option>
+        <option value="Femme">Femme</option>
+    </select>
+    <br><br>
+
+    <label for="dateNaissance">Date de naissance :</label>
+    <input type="date" id="dateNaissance" required>
+    <br><br>
+
+    <label for="lieuNaissance">Lieu de naissance :</label>
+    <input type="text" id="lieuNaissance" required>
+    <br><br>
+
+    <label for="departementNaissance">Département de naissance :</label>
+    <input type="text" id="departementNaissance" required>
+    <br><br>
+
+    <label for="numeroRue">Numéro de rue :</label>
+    <input type="text" id="numeroRue" required>
+    <br><br>
+
+    <label for="libelleRue">Libellé de rue :</label>
+    <input type="text" id="libelleRue" required>
+    <br><br>
+
+    <label for="codePostal">Code postal :</label>
+    <input type="text" id="codePostal" required>
+    <br><br>
+
+    <label for="ville">Ville :</label>
+    <input type="text" id="ville" required>
+    <br><br>
+
+    <button type="submit">Enregistrer l'utilisateur</button>
+
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtrage des polluants</title>
+
+    <script src="tp10-filtrage-polluants.js" defer></script>
+</head>
+<body>
+
+    <h1 id="titre">Filtrage des polluants</h1>
+
+    <label for="min">MIN :</label>
+    <input type="number" id="min" placeholder="Valeur minimale">
+
+    <label for="max">MAX :</label>
+    <input type="number" id="max" placeholder="Valeur maximale">
+
+    <button id="valider">Valider</button>
+
+    <h2 id="annee"></h2>
+
+    <p id="message"></p>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Pays</th>
+                <th>Valeur</th>
+                <th>Pourcentage</th>
+                <th>Code</th>
+            </tr>
+        </thead>
+
+        <tbody id="listePays"></tbody>
+    </table>
+
+</body>
+</html>

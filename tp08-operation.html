@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Opération</title>
+
+    <script src="tp08-operation.js" defer></script>
+</head>
+<body>
+
+    <h1>Calculatrice - Opérations</h1>
+
+    <label for="nombre1">Premier nombre :</label>
+    <input type="number" id="nombre1">
+
+    <br><br>
+
+    <label for="nombre2">Deuxième nombre :</label>
+    <input type="number" id="nombre2">
+
+    <br><br>
+
+    <label for="operateur">Choisir une opération :</label>
+
+    <select id="operateur">
+        <option value="+">Addition (+)</option>
+        <option value="-">Soustraction (-)</option>
+        <option value="*">Multiplication (*)</option>
+        <option value="/">Division (/)</option>
+    </select>
+
+    <br><br>
+
+    <button id="calculer">Calculer</button>
+
+    <p>
+        <span id="resultat"></span>
+    </p>
+
+</body>
+</html>
